@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">始终允许创建用户</string>
+    <string name="xposed_desc">绕过 Android 用户/配置文件创建限制\n<b>注意</b>：禁用或卸载模块，如存在 <b>Device Owner</b>, 重启系统会<b>自动删除“私密空间”</b>！！！</string>
+
+    <string name="module_not_loaded">模块未加载</string>
+    <string name="will_not_save">您所做的任何更改将不会被保存</string>
+
+    <string name="category_general">常规</string>
+    <string name="enable_module_title">启用模块</string>
+    <string name="enable_module_summary">启用或禁用所有模块功能的总开关。</string>
+
+    <string name="category_settings">设置</string>
+    
+    <string name="hook_isCreationOverrideEnabled_title">绕过 isCreationOverrideEnabled</string>
+    <string name="hook_isCreationOverrideEnabled_summary">启用此项以绕过用户创建限制 (Android 14+)</string>
+    
+    <string name="hook_canAddMoreProfilesToUser_title">绕过 canAddMoreProfilesToUser</string>
+    <string name="hook_canAddMoreProfilesToUser_summary">启用此项以绕过配置文件数量限制 (Android 11–13)</string>
+    
+    <string name="hook_canAddMoreManagedProfiles_title">绕过 canAddMoreManagedProfiles</string>
+    <string name="hook_canAddMoreManagedProfiles_summary">启用此项以绕过受管配置文件限制 (Android 6–10)</string>
+    
+    <string name="hook_isUserLimitReached_title">绕过 isUserLimitReached</string>
+    <string name="hook_isUserLimitReached_summary">启用此项以绕过用户数量限制检查 (Android 7–13)</string>
+    
+    <string name="hook_isUserLimitReachedLocked_title">绕过 isUserLimitReachedLocked</string>
+    <string name="hook_isUserLimitReachedLocked_summary">启用此项以绕过用户数量限制检查 (Android 4.2–6)</string>
+    
+    <string name="hook_canAddPrivateProfile_title">绕过 canAddPrivateProfile</string>
+    <string name="hook_canAddPrivateProfile_summary">启用此项以绕过“私密空间”设置限制 (Android 15+)</string>
+    
+    <string name="hook_hasUserRestriction_title">绕过 hasUserRestriction</string>
+    <string name="hook_hasUserRestriction_summary">启用此项以绕过用户限制策略 (Android 15+)</string>
+    
+    <string name="hook_removeUserEvenWhenDisallowed_title">绕过 removeUserEvenWhenDisallowed</string>
+    <string name="hook_removeUserEvenWhenDisallowed_summary">启用此项以绕过强制删除用户策略 (Android 15+)\n<b>注意</b>：禁用此项，如存在 <b>Device Owner</b>, 重启系统会<b>自动删除“私密空间”</b>！！！</string>
+
+</resources>

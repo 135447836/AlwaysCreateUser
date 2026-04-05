@@ -31,6 +31,9 @@ public class MainHook extends XposedHelper implements IXposedHookLoadPackage {
         checkAndHook("canAddMoreManagedProfiles", true);
         checkAndHook("isUserLimitReached", false);
         checkAndHook("isUserLimitReachedLocked", false);
+        checkAndHook("canAddPrivateProfile", true);
+        checkAndHook("hasUserRestriction", false);
+        checkAndHook("removeUserEvenWhenDisallowed", false);
     }
 
     private void checkAndHook(String methodName, Object result) {
@@ -45,6 +48,7 @@ public class MainHook extends XposedHelper implements IXposedHookLoadPackage {
                 if (prefs.getBoolean("hook_" + methodName, true)) {
                     log("Bypassing " + methodName);
                     param.setResult(result);
+                    return;
                 }
             }
         });

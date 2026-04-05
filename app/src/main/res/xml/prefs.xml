@@ -37,5 +37,20 @@
             android:key="hook_isUserLimitReachedLocked"
             android:summary="@string/hook_isUserLimitReachedLocked_summary"
             android:title="@string/hook_isUserLimitReachedLocked_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="hook_canAddPrivateProfile"
+            android:summary="@string/hook_canAddPrivateProfile_summary"
+            android:title="@string/hook_canAddPrivateProfile_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="hook_hasUserRestriction"
+            android:summary="@string/hook_hasUserRestriction_summary"
+            android:title="@string/hook_hasUserRestriction_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="hook_removeUserEvenWhenDisallowed"
+            android:summary="@string/hook_removeUserEvenWhenDisallowed_summary"
+            android:title="@string/hook_removeUserEvenWhenDisallowed_title" />
     </PreferenceCategory>
 </PreferenceScreen>
