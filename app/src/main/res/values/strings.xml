@@ -20,11 +20,20 @@
     <string name="hook_isUserLimitReached_title">Bypass isUserLimitReached</string>
     <string name="hook_isUserLimitReachedLocked_summary">Enable this to bypass user limit checks (Android 4.2–6)</string>
     <string name="hook_isUserLimitReachedLocked_title">Bypass isUserLimitReachedLocked</string>
-    <string name="hook_canAddPrivateProfile_summary">Enable this to bypass Private Space addition restrictions (Android 15+)</string>
-    <string name="hook_canAddPrivateProfile_title">Bypass canAddPrivateProfile</string>
-    <string name="hook_hasUserRestriction_summary">Enable this to bypass user restrictions (Android 15+)</string>
-    <string name="hook_hasUserRestriction_title">Bypass hasUserRestriction</string>
-    <string name="hook_removeUserEvenWhenDisallowed_summary">Enable this to bypass forced user removal even when disallowed (Android 15+)\n<b>Caution</b>: Disabling this option with a <b>Device Owner</b> present will <b>automatically delete the Private Space</b> after rebooting!!!</string>
-    <string name="hook_removeUserEvenWhenDisallowed_title">Bypass removeUserEvenWhenDisallowed</string>
+    <string name="hook_enforceCanSetDeviceOwnerLocked_summary">Allow the app to be forcibly set as the Device Owner without deleting users or accounts.</string>
+    <string name="hook_enforceCanSetDeviceOwnerLocked_title">Force set Device owner</string>
+    <string name="hook_enforceCanSetProfileOwnerLocked_summary">Allow the app to be forcibly set as the Profile Owner without deleting users or accounts.</string>
+    <string name="hook_enforceCanSetProfileOwnerLocked_title">Force set Profile owner</string>
+    <string name="deviceowner">Device Owner</string>
+    <string name="misc_title">Disable Device Owner Restrictions</string>
+    <string name="misc_summary">Note: Please restart your device after modifying these options to apply the changes.</string>
+    <string name="bypass_no_add_user_title">Allow User Creation</string>
+    <string name="bypass_no_add_user_summary">The no_add_user is a user restriction on Android that prevents the user creation.</string>
+    <string name="bypass_no_add_managed_profile_title">Allow creating work profile</string>
+    <string name="bypass_no_add_managed_profile_summary">The no_add_managed_profile is a user restriction on Android that prevents the creation of work profiles.</string>
+    <string name="bypass_no_add_private_profile_title">Allow creating private profile</string>
+    <string name="bypass_no_add_private_profile_summary">The no_add_private_profile is a user restriction on Android that prevents the creation of private space.</string>
+    <string name="bypass_no_add_clone_profile_title">Allow creating clone profile</string>
+    <string name="bypass_no_add_clone_profile_summary">The no_add_clone_profile is a user restriction on Android that prevents the creation of cloned app profiles (app cloning/dual apps).</string>
 
 </resources>

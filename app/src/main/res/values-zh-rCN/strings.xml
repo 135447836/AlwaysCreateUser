@@ -25,14 +25,19 @@
     
     <string name="hook_isUserLimitReachedLocked_title">绕过 isUserLimitReachedLocked</string>
     <string name="hook_isUserLimitReachedLocked_summary">启用此项以绕过用户数量限制检查 (Android 4.2–6)</string>
-    
-    <string name="hook_canAddPrivateProfile_title">绕过 canAddPrivateProfile</string>
-    <string name="hook_canAddPrivateProfile_summary">启用此项以绕过“私密空间”设置限制 (Android 15+)</string>
-    
-    <string name="hook_hasUserRestriction_title">绕过 hasUserRestriction</string>
-    <string name="hook_hasUserRestriction_summary">启用此项以绕过用户限制策略 (Android 15+)</string>
-    
-    <string name="hook_removeUserEvenWhenDisallowed_title">绕过 removeUserEvenWhenDisallowed</string>
-    <string name="hook_removeUserEvenWhenDisallowed_summary">启用此项以绕过强制删除用户策略 (Android 15+)\n<b>注意</b>：禁用此项，如存在 <b>Device Owner</b>, 重启系统会<b>自动删除“私密空间”</b>！！！</string>
-
+    <string name="hook_enforceCanSetDeviceOwnerLocked_title">强制设置 Device Owner</string>
+    <string name="hook_enforceCanSetDeviceOwnerLocked_summary">无需删除用户和账号，允许应用强制设为 Device owner。</string>
+    <string name="hook_enforceCanSetProfileOwnerLocked_title">强制设置 Profile Owner</string>
+    <string name="hook_enforceCanSetProfileOwnerLocked_summary">无需删除用户和账号，允许应用强制设为 Profile Owner。</string>
+    <string name="deviceowner">设备所有者</string>
+    <string name="misc_title">取消设备所有者 (Device Owner) 限制</string>
+    <string name="misc_summary">注意：更改以下选项后，请重启设备以使设置生效！</string>
+    <string name="bypass_no_add_user_title">允许添加用户</string>
+    <string name="bypass_no_add_user_summary">绕过 no_add_user(DISALLOW_ADD_USER) 限制，启用此项以允许在设备上添加新用户。</string>
+    <string name="bypass_no_add_managed_profile_title">允许创建工作资料</string>
+    <string name="bypass_no_add_managed_profile_summary">绕过 no_add_managed_profile(DISALLOW_ADD_MANAGED_PROFILE) 限制，启用此项以允许在设备上创建工作资料。</string>
+    <string name="bypass_no_add_private_profile_title">允许创建私密空间</string>
+    <string name="bypass_no_add_private_profile_summary">绕过 no_add_private_profile(DISALLOW_ADD_PRIVATE_PROFILE) 限制，启用此项以允许在设备上创建私密空间。</string>
+    <string name="bypass_no_add_clone_profile_title">允许创建应用分身</string>
+    <string name="bypass_no_add_clone_profile_summary">绕过 no_add_clone_profile(DISALLOW_ADD_CLONE_PROFILE) 限制，启用此项以允许添加新的“克隆型”配置文件（如应用分身或工作资料）。</string>
 </resources>

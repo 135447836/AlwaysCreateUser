@@ -10,47 +10,86 @@
             android:title="@string/enable_module_title" />
     </PreferenceCategory>
     <PreferenceCategory
+        android:key="DeviceOwner"
+        android:title="@string/deviceowner">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="hook_enforceCanSetDeviceOwnerLocked"
+            android:dependency="enable_module"
+            android:summary="@string/hook_enforceCanSetDeviceOwnerLocked_summary"
+            android:title="@string/hook_enforceCanSetDeviceOwnerLocked_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="hook_enforceCanSetProfileOwnerLocked"
+            android:dependency="enable_module"
+            android:summary="@string/hook_enforceCanSetProfileOwnerLocked_summary"
+            android:title="@string/hook_enforceCanSetProfileOwnerLocked_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
         android:key="settings"
         android:title="@string/category_settings">
         <SwitchPreference
             android:defaultValue="true"
             android:key="hook_isCreationOverrideEnabled"
+            android:dependency="enable_module"
             android:summary="@string/hook_isCreationOverrideEnabled_summary"
             android:title="@string/hook_isCreationOverrideEnabled_title" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="hook_canAddMoreProfilesToUser"
+            android:dependency="enable_module"
             android:summary="@string/hook_canAddMoreProfilesToUser_summary"
             android:title="@string/hook_canAddMoreProfilesToUser_title" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="hook_canAddMoreManagedProfiles"
+            android:dependency="enable_module"
             android:summary="@string/hook_canAddMoreManagedProfiles_summary"
             android:title="@string/hook_canAddMoreManagedProfiles_title" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="hook_isUserLimitReached"
+            android:dependency="enable_module"
             android:summary="@string/hook_isUserLimitReached_summary"
             android:title="@string/hook_isUserLimitReached_title" />
         <SwitchPreference
             android:defaultValue="true"
             android:key="hook_isUserLimitReachedLocked"
+            android:dependency="enable_module"
             android:summary="@string/hook_isUserLimitReachedLocked_summary"
             android:title="@string/hook_isUserLimitReachedLocked_title" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:key="misc"
+        android:title="@string/misc_title">
+        <Preference
+            android:key="misc_description"
+            android:summary="@string/misc_summary"
+            android:selectable="false"
+            android:enabled="false" />
         <SwitchPreference
             android:defaultValue="true"
-            android:key="hook_canAddPrivateProfile"
-            android:summary="@string/hook_canAddPrivateProfile_summary"
-            android:title="@string/hook_canAddPrivateProfile_title" />
+            android:key="bypass_no_add_user"
+            android:dependency="enable_module"
+            android:summary="@string/bypass_no_add_user_summary"
+            android:title="@string/bypass_no_add_user_title" />
         <SwitchPreference
             android:defaultValue="true"
-            android:key="hook_hasUserRestriction"
-            android:summary="@string/hook_hasUserRestriction_summary"
-            android:title="@string/hook_hasUserRestriction_title" />
+            android:key="bypass_no_add_managed_profile"
+            android:dependency="enable_module"
+            android:summary="@string/bypass_no_add_managed_profile_summary"
+            android:title="@string/bypass_no_add_managed_profile_title" />
         <SwitchPreference
             android:defaultValue="true"
-            android:key="hook_removeUserEvenWhenDisallowed"
-            android:summary="@string/hook_removeUserEvenWhenDisallowed_summary"
-            android:title="@string/hook_removeUserEvenWhenDisallowed_title" />
+            android:key="bypass_no_add_private_profile"
+            android:dependency="enable_module"
+            android:summary="@string/bypass_no_add_private_profile_summary"
+            android:title="@string/bypass_no_add_private_profile_title" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="bypass_no_add_clone_profile"
+            android:dependency="enable_module"
+            android:summary="@string/bypass_no_add_clone_profile_summary"
+            android:title="@string/bypass_no_add_clone_profile_title" />
     </PreferenceCategory>
 </PreferenceScreen>
